@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+<link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=1280px, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Star Wars</title>
+</head>
+<style>
+	#menu {
+		width: 1525px;
+		height: 720px;
+		background-image: url('img/bg.png');
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+    	align-items: center;
+		gap: 100px;
+	}
+
+	#title {
+		background-image: url('img/menu_title.png');
+		width: 534px;
+		height: 47px;
+	}
+
+	#menu_buttons {
+		display: flex;
+		gap: 100px;
+	}
+
+	#rebels {
+		background-image: url('img/rebels.png');
+		width: 150px;
+		height: 150px;
+		background-size: 150px 150px;
+		cursor: pointer;
+	}
+
+	#empire {
+		background-image: url('img/empire.png');
+		width: 150px;
+		height: 150px;
+		background-size: 150px 150px;
+		cursor: pointer;
+	}
+</style>
+<body>
+
+ <canvas id="canvas" width="1525" height="720"></canvas>
+	<div id="menu">
+		<div id="title"></div>
+		<section id="menu_buttons">
+			<div id="rebels"></div>
+			<div id="empire"></div>
+		</section>
+	</div>
+ <script src="game.js"></script>
+</body>
+</html>
